@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #E7E7E7;
+    padding-top:100px;
+}
+
+header{
+    display: flex; /*Utilizamos o 'display: flex' para que os itens fiquem um ao lado do outro*/
+    align-items: center; /*Para centralizar os itens na vertical*/
+    margin-bottom: 40px; /*Para espaçar um pouco o header em relação à tabela*/
+}
+
+header img{
+    height:36px;
+    margin-right:16px;
+}
+
+header h1 {
+    font-size:40px;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; /*Centraliza o conteúdo na horizontal*/
+}
+
+form {
+    display:flex; /*"Agrupou" o formulário*/
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom:56px; /*Aplicando espaço entre o formulário e a tabela*/
+}
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    border:none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    width: 100%;/*largura 100% para aproveitarmos todo o espaçamento do nosso container*/
+}
+
+table th {
+    border-bottom:2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center; /*alinhamento dos dados da tabela*/
+    font-size:18px;
+    padding:16px 0; /*8px indica espaçamento superior e inferior e 0 indica o espaçamento nas laterais*/
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+table td img{
+    height:30px; /*Definindo tamanho dos emojis dentro da tabela*/
+}
+
+.resultado {
+    padding:8px;
+    font-weight:bold;
+    color: #fff;
+    background-color: #000;
+    border-radius:3px;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
