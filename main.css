@@ -2,34 +2,40 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', static;
 }
 
 body{
-    background-color: #E7E7E7;
+    background-color: #222A35;
     padding-top:100px;
 }
 
 header{
     display: flex; /*Utilizamos o 'display: flex' para que os itens fiquem um ao lado do outro*/
-    align-items: center; /*Para centralizar os itens na vertical*/
+    align-items: center; /*Para centralizar os elementos na vertical, quando contidos em um container com display:flex*/
     margin-bottom: 40px; /*Para espaçar um pouco o header em relação à tabela*/
 }
 
 header img{
-    height:36px;
-    margin-right:16px;
+    height: 400px;
+    margin-right:32px;
 }
 
 header h1 {
     font-size:40px;
     font-weight: bold;
+    color:#C6CCCA;
 }
 
 .container{
     max-width: 960px;
     width: 100%;
     margin: 0 auto; /*Centraliza o conteúdo na horizontal*/
+}
+
+.container img{
+    height: 450px;
+    margin-right:32px;
 }
 
 form {
@@ -49,8 +55,8 @@ form input {
 }
 
 form button {
-    background-color: #009432;
-    color: #fff;
+    background-color: #FCAE70;
+    color: #292E31;
     font-size: 24px;
     font-weight: bold;
     border: none;
@@ -63,35 +69,21 @@ table {
 }
 
 table th {
-    border-bottom:2px solid black;
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
+    background-color: #FCAE70;
 }
 
 table td {
-    text-align: center; /*alinhamento dos dados da tabela*/
+    text-align: center;
     font-size:18px;
-    padding:16px 0; /*8px indica espaçamento superior e inferior e 0 indica o espaçamento nas laterais*/
+    padding:16px 0; 
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
 }
 
-table td img{
-    height:30px; /*Definindo tamanho dos emojis dentro da tabela*/
-}
-
-.resultado {
-    padding:8px;
-    font-weight:bold;
-    color: #fff;
-    background-color: #000;
-    border-radius:3px;
-}
-
-.aprovado {
-    background-color: #009432;
-}
-
-.reprovado {
-    background-color: red;
+footer {
+    padding: 16px;
+    color:#FCAE70;
 }

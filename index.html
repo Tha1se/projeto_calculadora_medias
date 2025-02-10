@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Médias</title>
+    <title>Agenda de Contatos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="container"> <!-- Criamos este container para podermos centralizar todo o contéudo na horizontal -->
+    <div class="container">
         <header>
-            <img src="./images/logo.png" alt="capelo e diploma">
-            <h1>Calculadora de médias</h1>
+            <img src="./images/phonebook.jpg" alt="agenda de contatos">
+            <h1>Minha Agenda de Contatos</h1>
         </header>
-        <form id="form-atividade">
-            <input type="text" id="nome-atividade" required placeholder="Nome da atividade"/>
-            <input type="number" id="nota-atividade" required placeholder="Nota" min="0" max="10"/>
-            <button type="submit">Adicionar +</button>
+        <form id="form-agenda">
+            <input type="text" id="nome" required placeholder="Nome"/>
+            <input type="text" id="telefone" required placeholder="Telefone" maxlength="13"/>
+            <button type="submit">Adicionar</button>
         </form>
-        <table cellspacing="0"> <!--esta propriedade fez com que o sublinhado do cabeçalho da tabela não tivesse espaço entre uma coluna e outra-->
+        <table cellspacing="0">
             <thead>
-                <tr>  <!-- 'tr' cria as linhas da tabela -->
-                    <th>Nome da atividade</th> <!--'th' cria colunas na tabela, se referindo ao cabeçalho dela (h)eader -->
-                    <th>Nota da atividade</th>
-                    <th>Aprovado?</th>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
                 </tr>
             </thead>
             <tbody>
-            <tfoot>
-                <tr>
-                    <td><b>Média final:</b></td> <!--'td' cria colunas na tabela, mas se referindo aos dados dela (d)ata-->
-                    <td id="media-final-valor">---</td>
-                    <td id="media-final-resultado">---</td>
-                </tr>
-            </tfoot>
             </tbody>
         </table>
+        <img src="./images/people.png" alt="pessoas">
     </div>
     <script src="./main.js"></script>
 </body>
+<footer>
+    <div class="container">
+        <p>
+            &copy; Thaise - Meus contatos - Todos os direitos reservados - 2025
+        </p>
+    </div>
+</footer>
 </html>
