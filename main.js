@@ -48,7 +48,7 @@ function atualizaTabela() { //este trecho estava inicialmente junto da função 
 function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); //'.toFixed()' delimita o número máximo de casas decimais - ex.: para não ficar 8.66666 e sim 8.66
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
